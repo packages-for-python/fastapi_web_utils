@@ -23,18 +23,8 @@
 
 ## 安装
 
-### 从PyPI安装
-
 ```bash
-pip install fastapi_web_utils
-```
-
-### 从源码安装
-
-```bash
-git clone https://github.com/packages-for-python/fastapi_web_utils.git
-cd fastapi_web_utils
-pip install -e .
+pip install git+https://github.com/packages-for-python/fastapi_web_utils
 ```
 
 ## 使用指南
