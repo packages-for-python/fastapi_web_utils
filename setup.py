@@ -15,7 +15,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires="==3.11",
+    python_requires=">=3.11",
     install_requires=[
         "greenlet==3.2.3",
         "SQLAlchemy==2.0.41",
