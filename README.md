@@ -32,7 +32,7 @@ pip install git+https://github.com/packages-for-python/fastapi_web_utils
 ### 日志管理
 
 ```python
-from tools.log import get_logger
+from fastapi_web_utils_tools.log import get_logger
 
 # 创建控制台日志
 logger = get_logger("my_app")
@@ -46,12 +46,12 @@ file_logger.warning("这条日志会同时输出到控制台和文件")
 ### PostgreSQL数据库连接
 
 ```python
-from tools.postgres import PostgresClient
+from fastapi_web_utils_tools.postgres import PostgresClient
 
 # 创建PostgreSQL客户端
 pg_client = PostgresClient(
     user="your_username",
-    password="your_password", 
+    password="your_password",
     host="localhost",
     port=5432,
     database="your_database"
@@ -75,13 +75,13 @@ finally:
 ### ClickHouse数据库连接
 
 ```python
-from tools.clickhouse import ClickhouseClient
+from fastapi_web_utils_tools.clickhouse import ClickhouseClient
 
 # 创建ClickHouse客户端
 ch_client = ClickhouseClient(
     user="default",
     password="your_password",
-    host="localhost", 
+    host="localhost",
     port=9000,
     database="your_database"
 )
@@ -157,7 +157,7 @@ fastapi_web_utils/
 ├── README.md
 ├── requirements.txt
 ├── setup.py
-└── tools/
+└── fastapi_web_utils_tools/
     ├── __init__.py
     ├── log.py          # 日志管理工具
     ├── postgres.py     # PostgreSQL客户端
